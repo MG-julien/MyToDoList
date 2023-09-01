@@ -1,1 +1,8 @@
 @import "./base/_variables.colors.scss";
+@import "./base/variables.font.scss";
+@import "./base/mixins.font.scss";
+@import "./normalize.scss";
+
+body {
+  background-color: map-get($colour, "primary");
+}
