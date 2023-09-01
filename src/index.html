@@ -15,6 +15,23 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="toDoListContainer">
+      <div class="formContainer">
+        <form>
+          <label for="addTask">Ecrivez vos nouvelles idées ici !</label>
+          <div class="formContainer__input">
+            <input
+              type="text"
+              name="addTask"
+              minlength="3"
+              maxlength="80"
+              placeholder="Rappelez-vous, tout commence avec des petites idées... "
+            />
+            <input type="submit" name="submitTask" value="Valider" />
+          </div>
+        </form>
+      </div>
+      <div class="listTaskContainer"></div>
+    </div>
   </body>
 </html>
