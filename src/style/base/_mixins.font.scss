@@ -2,7 +2,7 @@
     font-family: map-get($font-family, "primary");
     font-size: map-get($font-size, "infoBubble");
     font-weight: map-get($font-weight, "regular");
-    color: map-get($colour, "quaternary");
+    color: map-get($colour, "primary");
 }
 @mixin font-paragraph() {
     font-family: map-get($font-family, "primary");

@@ -2,6 +2,10 @@
 @import "./base/variables.font.scss";
 @import "./base/mixins.font.scss";
 @import "./normalize.scss";
+@import "./components/header.scss";
+@import "./components/main.scss";
+@import "./components/aside.scss";
+@import "./components/footer.scss";
 
 body {
     position: relative;

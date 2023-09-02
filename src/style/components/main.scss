@@ -1,0 +1,93 @@
+.mainContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainContainer__titleMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 980px;
+    height: auto;
+    font-family: map-get($font-family, "primary");
+    font-size: 400px;
+    color: map-get($colour, "secondary");
+    text-align: center;
+    text-shadow: 4px 4px 10px map-get($colour-rgba, "secondary");
+}
+.sectionFormContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 980px;
+    background-color: map-get($colour, "primary");
+    .sectionFormContainer__title {
+        display: none;
+    }
+    .sectionFormContainer__formContainer {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        border-bottom: 2px solid map-get($colour, "secondary");
+        label[for="addTask"] {
+            display: block;
+            width: 15px;
+            height: 45px;
+            margin-bottom: 5px;
+            color: transparent;
+            background-color: map-get($colour, "tertiary");
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 5px;
+                height: 45px;
+                margin-bottom: 5px;
+                background-color: map-get($colour, "quinary");
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 5px;
+                height: 45px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                background-color: map-get($colour-rgba, "secondary");
+                z-index: 1;
+            }
+        }
+        input[name="addTask"] {
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            @include font-paragraph;
+            &:focus {
+                outline: none;
+            }
+        }
+        input[name="submitTask"] {
+            display: none;
+        }
+    }
+}
+input[name="addTask"]:focus + input[name="submitTask"] {
+    display: block;
+    position: relative;
+    top: 5px;
+    right: 24px;
+    width: 36px;
+    height: 40px;
+    @include font-infoBubble;
+    background-color: map-get($colour, "quinary");
+    border: 2px solid map-get($colour, "secondary");
+    &:hover {
+        color: map-get($colour, "secondary");
+        background-color: map-get($colour, "tertiary");
+    }
+}
