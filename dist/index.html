@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--import of "Space Mono" of "Google Fonts" format regular 400 and bold 700-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+        <!--title onglet-->
+        <link rel="icon" type="image/png" href="./assets/icons/btnOnglet.png" />
+        <title>MyToDoList</title>
+    <script defer src="main.bundle.js"></script></head>
+
+    <body>
+        <header></header>
+        <main class="toDoListContainer">
+            <h1>
+                <span>todo</span>
+                <span>todo</span>
+            </h1>
+            <section class="formContainer">
+                <h2>Ecrivez vos nouvelles idées ici !</h2>
+                <form>
+                    <label for="addTask"></label>
+                    <input
+                        type="text"
+                        name="addTask"
+                        minlength="3"
+                        maxlength="80"
+                        placeholder="Rappelez-vous, tout commence avec des petites idées... "
+                    />
+                    <input type="submit" name="submitTask" value=".add" />
+                </form>
+            </section>
+        </main>
+        <aside></aside>
+        <footer></footer>
+    </body>
+</html>

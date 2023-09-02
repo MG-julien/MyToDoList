@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--import of "Space Mono" of "Google Fonts" format regular 400 and bold 700-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--title onglet-->
-    <title>MyToDoList</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--import of "Space Mono" of "Google Fonts" format regular 400 and bold 700-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+        <!--title onglet-->
+        <link rel="icon" href="./assets/icons/iconOnglet.png" />
+        <title>MyToDoList</title>
+    </head>
 
-  <body>
-    <div class="toDoListContainer">
-      <div class="formContainer">
-        <form>
-          <label for="addTask">Ecrivez vos nouvelles idées ici !</label>
-          <div class="formContainer__input">
-            <input
-              type="text"
-              name="addTask"
-              minlength="3"
-              maxlength="80"
-              placeholder="Rappelez-vous, tout commence avec des petites idées... "
-            />
-            <input type="submit" name="submitTask" value="Valider" />
-          </div>
-        </form>
-      </div>
-      <div class="listTaskContainer"></div>
-    </div>
-  </body>
+    <body>
+        <header class="headerContainer">
+            <nav class="headerContainer__navContainer">
+                <ul class="headerContainer__navContainer__listLinkContainer">
+                    <li class="headerContainer__navContainer__listLinkContainer__list">
+                        <img src="./assets/icons/github.svg" alt="icon du lien Github" width="40px" height="40px" />
+                        <a href="https://github.com/MG-julien"></a>
+                    </li>
+                    <li class="headerContainer__navContainer__listLinkContainer__list">
+                        <img src="./assets/icons/address-book-solid.svg" alt="icon du lien portefolio" width="40px" height="40px" />
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContainer">
+            <h1 class="mainContainer__titleMain">
+                <span class="mainContainer__titleMain__top">todo</span>
+                <span class="mainContainer__titleMain__bottom">todo</span>
+            </h1>
+            <section class="sectionFormContainer">
+                <h2 class="sectionFormContainer__title">Ecrivez vos nouvelles idées ici !</h2>
+                <form class="sectionFormContainer__formContainer">
+                    <label for="addTask"></label>
+                    <input
+                        type="text"
+                        name="addTask"
+                        minlength="3"
+                        maxlength="80"
+                        placeholder="Rappelez-vous, tout commence avec des petites idées... "
+                    />
+                    <input type="submit" name="submitTask" value="" />
+                </form>
+            </section>
+        </main>
+        <aside class="asideContainer">
+            <h2 class="asideContainer__title">Visualisez vos taches !</h2>
+            <ul class="asideContainer__addTasksContainer">
+                <!--add new tasks-->
+            </ul>
+        </aside>
+        <footer class="footerContainer"><!--bla bla bla--></footer>
+    </body>
 </html>
